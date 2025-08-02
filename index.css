@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(to right, #0d6efd, #4a90e2);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.features-section {
+  background-color: #ffffff;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+.features-section h4, .features-section h5 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.features-section i {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.new1 {
+  width: 60px;
+  height: 4px;
+  background-color: #0d6efd;
+  margin: 0 auto 20px auto;
+  border: none;
+  opacity: 1;
+}
+
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive spacing and text alignment */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .features-section .col-md-4 {
+    margin-bottom: 40px;
+  }
+}

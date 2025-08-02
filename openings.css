@@ -1,0 +1,162 @@
+/* openings.css */
+
+/* --- GENERAL --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+/* Nav links with hover underline effect */
+.custom-link {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  padding: 3px 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0%;
+  height: 2px;
+  background-color: #0d6efd;
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  color: #0d6efd;
+}
+
+.custom-link:hover::after {
+  width: 80%;
+}
+
+/* User dropdown styles */
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+  right: 0;
+  top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* --- JOB CARDS --- */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+/* Company Logo */
+.card-body img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+/* Job Info */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+/* Apply Button */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* --- SECTION HEADINGS --- */
+h2 {
+  font-size: 2rem;
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* --- EMPTY STATE --- */
+.text-muted {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #212529;
+  color: white;
+  font-size: 0.95rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 576px) {
+  .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-body img {
+    margin-bottom: 10px;
+  }
+}
